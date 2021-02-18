@@ -1,3 +1,4 @@
+// vertex shader. This just make a pass through shader
 #version 300 es
 
 layout(location = 0) in vec4 position;

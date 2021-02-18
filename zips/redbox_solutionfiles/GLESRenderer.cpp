@@ -1,5 +1,6 @@
 //
 //  Copyright © Borna Noureddin. All rights reserved.
+// implement the definition created in GLESRenderer.hpp
 //
 
 #include <stdio.h>
@@ -7,9 +8,14 @@
 #include <stdarg.h>
 #include <string.h>
 #include <iostream>
-#include "GLESRenderer.hpp"
+#include "GLESRenderer.hpp" // include local file (note use of "" and not <>)
 
-
+// class is GLESRenderer from GLESRenderer.hpp
+// here we are implementing its functions
+// so GLESRenderer::LoadShaderFile == GLESRenderer.LoadShaderFile
+// function signature/def must match the one in GLESRenderer.hpp
+// this is a standard file reader function.
+// it reads 
 char *GLESRenderer::LoadShaderFile(const char *shaderFileName)
 {
     FILE *fp = fopen(shaderFileName, "rb");
@@ -35,6 +41,7 @@ char *GLESRenderer::LoadShaderFile(const char *shaderFileName)
     return buf;
 }
 
+// load a shader
 GLuint GLESRenderer::LoadShader(GLenum type, const char *shaderSrc)
 {
     GLuint shader = glCreateShader(type);
@@ -48,6 +55,7 @@ GLuint GLESRenderer::LoadShader(GLenum type, const char *shaderSrc)
     glGetShaderiv(shader, GL_COMPILE_STATUS, &compiled);
     if (!compiled)
     {
+        // err handling
         GLint infoLen = 0;
         glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &infoLen);
         if (infoLen > 1)
@@ -65,6 +73,8 @@ GLuint GLESRenderer::LoadShader(GLenum type, const char *shaderSrc)
     return shader;
 }
 
+// attach shaders to a program object
+// params are the shader file's names
 GLuint GLESRenderer::LoadProgram(const char *vertShaderSrc, const char *fragShaderSrc)
 {
     GLuint vertexShader = LoadShader(GL_VERTEX_SHADER, vertShaderSrc);
@@ -88,12 +98,13 @@ GLuint GLESRenderer::LoadProgram(const char *vertShaderSrc, const char *fragShad
     
     glAttachShader(programObject, vertexShader);
     glAttachShader(programObject, fragmentShader);
-    glLinkProgram(programObject);
+    glLinkProgram(programObject); // link the shaders with the pipeline
     
     GLint linked;
     glGetProgramiv(programObject, GL_LINK_STATUS, &linked);
     if (!linked)
     {
+        // error handling
         GLint infoLen = 0;
         glGetProgramiv(programObject, GL_INFO_LOG_LENGTH, &infoLen);
         if (infoLen > 1)
@@ -108,13 +119,14 @@ GLuint GLESRenderer::LoadProgram(const char *vertShaderSrc, const char *fragShad
         return 0;
     }
     
+    // clean up
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
     return programObject;
 }
 
-
+// generate a square. Create a bunch of vertices where the square would be.
 int GLESRenderer::GenSquare(float scale, float **vertices, int **indices)
 {
     int i;

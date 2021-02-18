@@ -1,5 +1,9 @@
 //
-//  Copyright © Borna Noureddin. All rights reserved.
+//  ViewController.h
+//  glesbasics
+//
+//  Created by Borna Noureddin on 2020-01-14.
+//  Copyright © 2020 BCIT. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -7,6 +11,7 @@
 
 //@interface ViewController : UIViewController
 @interface ViewController : GLKViewController // ###
+
 
 @end
 
