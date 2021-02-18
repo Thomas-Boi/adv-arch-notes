@@ -1,3 +1,4 @@
+// fragment shader. this does nothing rn
 #version 300 es
 
 precision highp float;
