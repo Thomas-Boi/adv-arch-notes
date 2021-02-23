@@ -63,6 +63,9 @@ enum
     numIndices = glesRenderer.GenCube(1.0f, &vertices, &normals, &texCoords, &indices);
 }
 
+/*! Set up the view
+ \ param view, a view
+ */
 - (void)setup:(GLKView *)view
 {
     view.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3];
