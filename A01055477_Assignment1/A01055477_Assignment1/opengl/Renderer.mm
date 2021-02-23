@@ -131,7 +131,7 @@ enum
                            GL_FALSE, 3 * sizeof ( GLfloat ), vertices );
     glEnableVertexAttribArray ( 0 );
 
-    glVertexAttrib4f ( 1, 1.0f, 0.0f, 0.0f, 1.0f );
+    glVertexAttrib4f ( 1, 0.0f, 1.0f, 0.0f, 1.0f );
 
     glVertexAttribPointer ( 2, 3, GL_FLOAT,
                            GL_FALSE, 3 * sizeof ( GLfloat ), normals );

@@ -14,12 +14,12 @@
 		FA0B41F625DDEDC900E69E0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0B41F425DDEDC900E69E0E /* LaunchScreen.storyboard */; };
 		FA0B41F925DDEDC900E69E0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B41F825DDEDC900E69E0E /* main.m */; };
 		FA0B420B25DDEE2E00E69E0E /* GLESRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA0B420025DDEE2D00E69E0E /* GLESRenderer.cpp */; };
-		FA0B420C25DDEE2E00E69E0E /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA0B420125DDEE2D00E69E0E /* ViewController.mm */; };
 		FA0B420D25DDEE2E00E69E0E /* Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA0B420225DDEE2D00E69E0E /* Renderer.mm */; };
 		FA0B420F25DDEE2E00E69E0E /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FA0B420525DDEE2D00E69E0E /* Shader.fsh */; };
 		FA0B421025DDEE2E00E69E0E /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FA0B420625DDEE2D00E69E0E /* Shader.vsh */; };
 		FA0B421925DE07EF00E69E0E /* Transformations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B421825DE07EF00E69E0E /* Transformations.m */; };
-		FAD8412225E3873D00EF3182 /* crate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAD8412125E3873D00EF3182 /* crate.jpg */; };
+		FAAA8C5125E4CF52005CDB6B /* crate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAAA8C5025E4CF52005CDB6B /* crate.jpg */; };
+		FAAA8C5B25E4D413005CDB6B /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAAA8C5A25E4D413005CDB6B /* ViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,16 +34,16 @@
 		FA0B41F725DDEDC900E69E0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0B41F825DDEDC900E69E0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA0B420025DDEE2D00E69E0E /* GLESRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLESRenderer.cpp; sourceTree = "<group>"; };
-		FA0B420125DDEE2D00E69E0E /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = ../../zips/glesbasicfiles/ViewController.mm; sourceTree = "<group>"; };
 		FA0B420225DDEE2D00E69E0E /* Renderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Renderer.mm; sourceTree = "<group>"; };
 		FA0B420325DDEE2D00E69E0E /* GLESRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GLESRenderer.hpp; sourceTree = "<group>"; };
 		FA0B420525DDEE2D00E69E0E /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
 		FA0B420625DDEE2D00E69E0E /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
 		FA0B420725DDEE2D00E69E0E /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
-		FA0B420925DDEE2E00E69E0E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../zips/glesbasicfiles/ViewController.h; sourceTree = "<group>"; };
 		FA0B421825DE07EF00E69E0E /* Transformations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transformations.m; sourceTree = "<group>"; };
 		FA0B421B25DE081200E69E0E /* Transformations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transformations.h; sourceTree = "<group>"; };
-		FAD8412125E3873D00EF3182 /* crate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crate.jpg; sourceTree = "<group>"; };
+		FAAA8C4E25E4CEF5005CDB6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FAAA8C5025E4CF52005CDB6B /* crate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crate.jpg; sourceTree = "<group>"; };
+		FAAA8C5A25E4D413005CDB6B /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +76,9 @@
 		FA0B41E525DDEDC800E69E0E /* A01055477_Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA8C5025E4CF52005CDB6B /* crate.jpg */,
 				FA0B421625DDEEAC00E69E0E /* opengl */,
-				FA0B420925DDEE2E00E69E0E /* ViewController.h */,
-				FA0B420125DDEE2D00E69E0E /* ViewController.mm */,
+				FAAA8C4E25E4CEF5005CDB6B /* ViewController.h */,
 				FA0B41E625DDEDC800E69E0E /* AppDelegate.h */,
 				FA0B41E725DDEDC800E69E0E /* AppDelegate.m */,
 				FA0B41E925DDEDC800E69E0E /* SceneDelegate.h */,
@@ -103,7 +103,7 @@
 				FA0B420225DDEE2D00E69E0E /* Renderer.mm */,
 				FA0B420525DDEE2D00E69E0E /* Shader.fsh */,
 				FA0B420625DDEE2D00E69E0E /* Shader.vsh */,
-				FAD8412125E3873D00EF3182 /* crate.jpg */,
+				FAAA8C5A25E4D413005CDB6B /* ViewController.mm */,
 			);
 			path = opengl;
 			sourceTree = "<group>";
@@ -166,9 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0B41F625DDEDC900E69E0E /* LaunchScreen.storyboard in Resources */,
-				FAD8412225E3873D00EF3182 /* crate.jpg in Resources */,
 				FA0B41F325DDEDC900E69E0E /* Assets.xcassets in Resources */,
 				FA0B421025DDEE2E00E69E0E /* Shader.vsh in Resources */,
+				FAAA8C5125E4CF52005CDB6B /* crate.jpg in Resources */,
 				FA0B41F125DDEDC800E69E0E /* Main.storyboard in Resources */,
 				FA0B420F25DDEE2E00E69E0E /* Shader.fsh in Resources */,
 			);
@@ -181,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA0B420C25DDEE2E00E69E0E /* ViewController.mm in Sources */,
+				FAAA8C5B25E4D413005CDB6B /* ViewController.mm in Sources */,
 				FA0B420B25DDEE2E00E69E0E /* GLESRenderer.cpp in Sources */,
 				FA0B421925DE07EF00E69E0E /* Transformations.m in Sources */,
 				FA0B41E825DDEDC800E69E0E /* AppDelegate.m in Sources */,
