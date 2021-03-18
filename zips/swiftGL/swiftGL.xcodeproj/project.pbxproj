@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFEC51D823E202F80084203C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC51D723E202F80084203C /* AppDelegate.swift */; };
+		EFEC51DA23E202F80084203C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC51D923E202F80084203C /* SceneDelegate.swift */; };
+		EFEC51DC23E202F80084203C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC51DB23E202F80084203C /* ViewController.swift */; };
+		EFEC51DF23E202F80084203C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEC51DD23E202F80084203C /* Main.storyboard */; };
+		EFEC51E123E202F80084203C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEC51E023E202F80084203C /* Assets.xcassets */; };
+		EFEC51E423E202F80084203C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEC51E223E202F80084203C /* LaunchScreen.storyboard */; };
+		EFEC51F323E203410084203C /* Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFEC51ED23E203410084203C /* Renderer.mm */; };
+		EFEC51F423E203410084203C /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = EFEC51EE23E203410084203C /* Shader.vsh */; };
+		EFEC51F523E203410084203C /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = EFEC51F023E203410084203C /* Shader.fsh */; };
+		EFEC51F623E203410084203C /* crate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFEC51F123E203410084203C /* crate.jpg */; };
+		EFEC51F723E203410084203C /* GLESRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFEC51F223E203410084203C /* GLESRenderer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EFEC51D423E202F80084203C /* swiftGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEC51D723E202F80084203C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFEC51D923E202F80084203C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFEC51DB23E202F80084203C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFEC51DE23E202F80084203C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFEC51E023E202F80084203C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFEC51E323E202F80084203C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFEC51E523E202F80084203C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFEC51EB23E203400084203C /* swiftGL-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftGL-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFEC51EC23E203410084203C /* GLESRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GLESRenderer.hpp; sourceTree = "<group>"; };
+		EFEC51ED23E203410084203C /* Renderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Renderer.mm; sourceTree = "<group>"; };
+		EFEC51EE23E203410084203C /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		EFEC51EF23E203410084203C /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		EFEC51F023E203410084203C /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		EFEC51F123E203410084203C /* crate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crate.jpg; sourceTree = "<group>"; };
+		EFEC51F223E203410084203C /* GLESRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLESRenderer.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFEC51D123E202F80084203C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFEC51CB23E202F80084203C = {
+			isa = PBXGroup;
+			children = (
+				EFEC51D623E202F80084203C /* swiftGL */,
+				EFEC51D523E202F80084203C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFEC51D523E202F80084203C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFEC51D423E202F80084203C /* swiftGL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFEC51D623E202F80084203C /* swiftGL */ = {
+			isa = PBXGroup;
+			children = (
+				EFEC51F123E203410084203C /* crate.jpg */,
+				EFEC51F223E203410084203C /* GLESRenderer.cpp */,
+				EFEC51EC23E203410084203C /* GLESRenderer.hpp */,
+				EFEC51EF23E203410084203C /* Renderer.h */,
+				EFEC51ED23E203410084203C /* Renderer.mm */,
+				EFEC51F023E203410084203C /* Shader.fsh */,
+				EFEC51EE23E203410084203C /* Shader.vsh */,
+				EFEC51D723E202F80084203C /* AppDelegate.swift */,
+				EFEC51D923E202F80084203C /* SceneDelegate.swift */,
+				EFEC51DB23E202F80084203C /* ViewController.swift */,
+				EFEC51DD23E202F80084203C /* Main.storyboard */,
+				EFEC51E023E202F80084203C /* Assets.xcassets */,
+				EFEC51E223E202F80084203C /* LaunchScreen.storyboard */,
+				EFEC51E523E202F80084203C /* Info.plist */,
+				EFEC51EB23E203400084203C /* swiftGL-Bridging-Header.h */,
+			);
+			path = swiftGL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFEC51D323E202F80084203C /* swiftGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFEC51E823E202F80084203C /* Build configuration list for PBXNativeTarget "swiftGL" */;
+			buildPhases = (
+				EFEC51D023E202F80084203C /* Sources */,
+				EFEC51D123E202F80084203C /* Frameworks */,
+				EFEC51D223E202F80084203C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swiftGL;
+			productName = swiftGL;
+			productReference = EFEC51D423E202F80084203C /* swiftGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFEC51CC23E202F80084203C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = BCIT;
+				TargetAttributes = {
+					EFEC51D323E202F80084203C = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = EFEC51CF23E202F80084203C /* Build configuration list for PBXProject "swiftGL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFEC51CB23E202F80084203C;
+			productRefGroup = EFEC51D523E202F80084203C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFEC51D323E202F80084203C /* swiftGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFEC51D223E202F80084203C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEC51F423E203410084203C /* Shader.vsh in Resources */,
+				EFEC51E423E202F80084203C /* LaunchScreen.storyboard in Resources */,
+				EFEC51E123E202F80084203C /* Assets.xcassets in Resources */,
+				EFEC51F623E203410084203C /* crate.jpg in Resources */,
+				EFEC51DF23E202F80084203C /* Main.storyboard in Resources */,
+				EFEC51F523E203410084203C /* Shader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFEC51D023E202F80084203C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEC51F723E203410084203C /* GLESRenderer.cpp in Sources */,
+				EFEC51DC23E202F80084203C /* ViewController.swift in Sources */,
+				EFEC51D823E202F80084203C /* AppDelegate.swift in Sources */,
+				EFEC51F323E203410084203C /* Renderer.mm in Sources */,
+				EFEC51DA23E202F80084203C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFEC51DD23E202F80084203C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFEC51DE23E202F80084203C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFEC51E223E202F80084203C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFEC51E323E202F80084203C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFEC51E623E202F80084203C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFEC51E723E202F80084203C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFEC51E923E202F80084203C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAKE9HFVNK;
+				INFOPLIST_FILE = swiftGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bcit.swiftGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftGL/swiftGL-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFEC51EA23E202F80084203C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAKE9HFVNK;
+				INFOPLIST_FILE = swiftGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bcit.swiftGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftGL/swiftGL-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFEC51CF23E202F80084203C /* Build configuration list for PBXProject "swiftGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEC51E623E202F80084203C /* Debug */,
+				EFEC51E723E202F80084203C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFEC51E823E202F80084203C /* Build configuration list for PBXNativeTarget "swiftGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEC51E923E202F80084203C /* Debug */,
+				EFEC51EA23E202F80084203C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFEC51CC23E202F80084203C /* Project object */;
+}
